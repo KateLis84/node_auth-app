@@ -1,6 +1,6 @@
 const express = require('express');
 const { authController } = require('../controllers/auth.controller.js');
-const { catchError } = require('../utils/catchError.js');
+const { catchError } = require('../middlewares/validate.js');
 
 const authRouter = new express.Router();
 
