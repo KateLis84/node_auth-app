@@ -1,4 +1,4 @@
-const { ApiError } = require('../exceptions/AppiError.js');
+const { ApiError } = require('../exceptions/ApiError.js');
 
 function errorMiddleware(error, req, res, next) {
   if (error instanceof ApiError) {

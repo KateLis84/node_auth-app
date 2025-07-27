@@ -1,3 +1,4 @@
+/* eslint-disable no-console */
 'use strict';
 require('dotenv').config();
 
@@ -26,5 +27,5 @@ app.get('/', (req, res) => {
 app.use(errorMiddleware);
 
 app.listen(PORT, () => {
-  process.stdout(`Server is running on port ${PORT}`);
+  console.log('Server is running on port', PORT);
 });

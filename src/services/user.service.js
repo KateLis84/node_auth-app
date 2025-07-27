@@ -1,6 +1,6 @@
 const { v4: uuidv4 } = require('uuid');
 
-const { ApiError } = require('../exceptions/AppiError.js');
+const { ApiError } = require('../exceptions/ApiError.js');
 const { User } = require('../models/User.js');
 const { emailService } = require('./email.service.js');
 

@@ -3,7 +3,7 @@ const { User } = require('../models/User.js');
 const { userService } = require('../services/user.service.js');
 const { jwtService } = require('../utils/jwt.js');
 const { tokenService } = require('../services/token.service.js');
-const { ApiError } = require('../exceptions/AppiError.js');
+const { ApiError } = require('../exceptions/ApiError.js');
 
 const validateUserName = (name) => {
   if (!name) {
